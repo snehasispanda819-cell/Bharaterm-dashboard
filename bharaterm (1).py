@@ -784,7 +784,7 @@ def run_ai_query(ask, t1, t2, t3, t4, query):
     )
     result = call_claude(f"{system_ctx}\n\nQuestion: {query}")
     return ai_box(result, GOLD), query
-
+server = app.server
 if __name__ == "__main__":
     print("\n" + "="*60)
     print("  BharatTerm - India Manufacturing Intelligence Dashboard")
